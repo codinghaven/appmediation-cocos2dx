@@ -15,6 +15,9 @@
         <!-- Tell Cocos2dxActivity the name of our .so -->
         <meta-data android:name="android.app.lib_name"
                    android:value="MyGame" />
+        <meta-data
+            android:name="com.google.android.gms.ads.com.plugin.appmediation"
+            android:value="ADMOB_APP_ID"/>
 
         <activity
             android:name="org.cocos2dx.cpp.AppActivity"
@@ -28,6 +31,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <!-- Appmediation -->
+        <!-- Mobvista -->
+        <receiver android:name="com.mintegral.msdk.click.AppReceiver"
+            android:enabled="@bool/isLessThenApi28" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- StatApp -->
+        <receiver android:name="com.startapp.android.publish.common.metaData.BootCompleteListener">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <!-- Appmediation -->
+    </application>
 </manifest>
