@@ -3,8 +3,9 @@
 
 #include "AdType.h"
 #include "GdprConsent.h"
+#include <string>
 
-class AMSDK {
+struct AMSDK {
 public:
 	static void init(const std::string&);
 	static void setAutoLoad(AdType);
@@ -14,7 +15,7 @@ public:
 	static void setTestMode(bool);
 	static void setUserIdentifier(const std::string&);
 	
-	static enum GdprConsent { AGREE, DISAGREE, NOT_REQUIRED, UNKNOWN }
+	static enum GdprConsent { AGREE, DISAGREE, NOT_REQUIRED, UNKNOWN };
 
 };
 
