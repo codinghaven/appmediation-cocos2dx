@@ -3,6 +3,8 @@
 
 // DON'T CHANGE THIS
 
-#define CLASS_PATH "com.appmediation.sdk"
+#define AMSDK_CLASS "com.appmediation.sdk.AMSDK"
+#define AMBANNER_CLASS "com.appmediation.sdk.AMBanner"
+#define AMINTERSTITIAL_CLASS "com.appmediation.sdk.AMInterstitial"
 
 #endif

@@ -15,7 +15,7 @@ public:
 	static void setTestMode(bool);
 	static void setUserIdentifier(const std::string&);
 	
-	static enum GdprConsent { AGREE, DISAGREE, NOT_REQUIRED, UNKNOWN };
+	enum GdprConsent { AGREE, DISAGREE, NOT_REQUIRED, UNKNOWN };
 
 };
 

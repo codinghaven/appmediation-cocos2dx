@@ -8,6 +8,6 @@ class appmediation {
 public:
 	static AMSDK amsdk;
 	static AdType adType;
-}
+};
 
 #endif

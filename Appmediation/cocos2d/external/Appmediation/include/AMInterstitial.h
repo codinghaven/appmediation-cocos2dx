@@ -1,7 +1,7 @@
 #ifndef AMINTERSTITIAL_H_DEFINE
 #define AMINTERSTITIAL_H_DEFINE
 
-class AMInterstitial {
+struct AMInterstitial {
 public:
 	static bool isReady();
 	static void show();
