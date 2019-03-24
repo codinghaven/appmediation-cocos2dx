@@ -17,8 +17,10 @@ Integration instructions:
   
    Add `$(LOCAL_PATH)/../../../cocos2d/external/Appmediation/include` to your `LOCAL_C_INCLUDES`
    
-   Then right after `LOCAL_STATIC_LIBRARIES := cocos2dx_static`
+   Right after `LOCAL_STATIC_LIBRARIES := cocos2dx_static`
    add on the next line, `LOCAL_STATIC_LIBRARIES := appmediation_static`
+   
+   Right before` $(call import-module, cocos)`                                                                                    add this `$(call import-module, Appmediation)`
    
 You are all set!
 
