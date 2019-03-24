@@ -1,6 +1,0 @@
-#ifndef AMBANNER_SIZE_H_DEFINE
-#define AMBANNER_SIZE_H_DEFINE
-
-enum AMBannerSize { STANDARD, LARGE, FULL_WIDTH };
-
-#endif
